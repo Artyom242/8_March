@@ -17,7 +17,7 @@ body{
     z-index: -99;
 }
 
-img{
+main img{
     position: absolute ;
     width: 100%;
     height: 100%;
@@ -355,6 +355,9 @@ img{
 
 /*---------preloader----------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+/*---------preloader----------------*/
+
 #preloader {
     z-index: 1000000;
     position: fixed;
@@ -369,13 +372,20 @@ img{
 #preloader_text{
     font-size: calc(15px + 40 *(100vw / 1200)) ;
     text-align: center ;
-    font-family: none;
+    font-family: 'Julee';
+    color: aliceblue;
 }
-
+#preloader_block{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #preloader img {
     position: relative;
     object-fit: contain;
-    max-width: 30%;
+    max-width: 50%;
+    margin: auto 0;
     display: block;
     margin: 0 auto;
 }
@@ -398,3 +408,5 @@ img{
         opacity: 0;
     }
 }
+
+
